@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="static/styles.css">
+
+    <title>CSO Logs Visualization Web App</title>
+</head>
+<body>
+
+  <!-- NAV BAR -->
+  <header>
+    <div class="topnav" id="myTopnav">
+        <a href="{{url_for('home_page')}}" class="active"><img src="static/download.png" height="55px"></a>
+
+          <!-- MENU BUTTONS (VERY OPTIONAL) -->
+
+          <!-- <div class="topnav-right">
+              <a href="">Menu 1</a>
+              <a href="">Menu 2</a>
+            </div>-->
+          </div>
+
+          <hr>
+
+</header>
+
+<!-- MAIN CONTENT -->
+
+<main class="main">
+
+
+    <div style="width: 100%;">
+      <div class="div-left">
+
+        <p style="color:green;">CSV file: {{ filename1 }} was successfully uploaded.</p>
+          <form action="#" method='POST' enctype="multipart/form-data">
+            <label>Successful upload</label>
+              <input type="file" name="file1" disabled="true"/>
+              <input type="submit" name="upload1" value="Upload" disabled="true">
+          </form>
+            <br>
+            <br><br><form action="{{ url_for('automation_page2') }}" method="GET">
+              <button type="submit">Visualize Logs</button>
+            </form>
+          </div>
+
+
+
+</main>
+
+<hr>        
+<hr>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+  <div class="footer__addr">
+  <img src="static/download.png" height="100px">
+
+  </div>
+
+  <ul class="footer__nav">
+    <li class="nav__item nav__item--extra">
+      <h2 class="nav__title">SMS Global Technologies, Inc.</h2>
+
+      <!-- <ul class="nav__ul">
+        <li>
+          <a href="#">About Us</a>
+        </li>
+
+        <li>
+          <a href="#">Services</a>
+        </li>
+
+        <li>
+          <a href="#">Solutions</a>
+        </li>
+
+        <li>
+          <a href="#">Careers</a>
+        </li>
+      </ul>
+    </li> -->
+
+
+    <li class="nav__item">
+      <h2 class="nav__title">CSO LOGS VISUALIZATION APP</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="FAQ.html">FAQ</a>
+        </li>
+
+        <li>
+          <a href="PrivacyPolicy.html">Privacy Policy</a>
+        </li>
+
+        <li>
+          <a href="TermsOfUse.html">Terms of Use</a>
+        </li>
+
+      </ul>
+    </li>
+
+    <li class="nav__item">
+      <h2 class="nav__title">Contact Us</h2>
+
+      <ul class="nav__ul">
+        <li>
+          East Tower Philippine Stock Center Exchange 1605, Exchange Rd, Ortigas Center, Pasig
+        </li>
+
+        <li>
+          (+63) 9178009847
+        </li>
+
+        <li>
+          (+63) 9363392851
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="legal">
+      &copy; 2023 All rights reserved.
+
+  </div>
+</footer>
+
+</body>
+</html>

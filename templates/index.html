@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="static/styles.css">
+
+    <title>CSO Logs Visualization Web App</title>
+</head>
+<body>
+
+      <!-- NAV BAR -->
+<header>
+    <div class="topnav" id="myTopnav">
+        <a href="{{url_for('home_page')}}" class="active"><img src="static/download.png" height="55px"></a>
+
+        <!-- MENU BUTTONS (VERY OPTIONAL) -->
+
+        <!-- <div class="topnav-right">
+            <a href="">Menu 1</a>
+            <a href="">Menu 2</a>
+          </div>-->
+      </div>
+
+      <hr>
+
+</header>
+
+      <!-- MAIN CONTENT -->
+
+      <main class="main">
+    <div>
+        <p2><center>CSO LOGS VISUALIZATION WEB APP</center></p2>
+            <hr>
+        <div style="width: 100%;">
+            <div class="div-left">
+                <p1>Visualize with <b>POINT AND CLICK</b> Interface</p1></font>
+                <p>This web application is designed and built for SMSGT CSO Engineers, for them to store logs, visualize logs data, and be familiarized in an in depth level, with different technologies related with application support.</p>
+                <p>This application utilizes 2 methods of gathering logs data, number one is by using manual uploading of logs and the other one is automated pulling using web automation.</p>
+
+                </p>
+            </div>
+
+
+            <div class="div-right" align="center">
+                <img src="static/pnc.gif" height="350px">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="div-second" align="center">
+        <p2>Start Using Logs Data Visualization now!</p2>
+        <hr>
+    <img src="static/webscrape.gif" height="350px">
+
+    <hr>
+
+        <br><p2>Options for Gathering of logs data:</p2>
+        
+    </div>
+
+    <div class="container">
+      <div class="center"><form action="{{ url_for('logs_upload')}}" method="get">
+        <button type="submit" style="white-space: nowrap;">Upload Logs</button>
+      </form></div>
+      <br><div class="center"><form action="{{ url_for('DRS_Success')}}" method="get">
+        <button type="submit" style="white-space: nowrap;">Upload DRS Report Logs</button></form>
+      </form>
+    </div>
+      </div>
+
+        <br>
+    </div>
+
+      </main>
+
+      <hr>
+
+    <!-- FOOTER -->
+
+<footer class="footer">
+  <div class="footer__addr">
+  <img src="static/download.png" height="100px">
+
+  </div>
+
+  <ul class="footer__nav">
+    <li class="nav__item nav__item--extra">
+      <h2 class="nav__title">SMS Global Technologies, Inc.</h2>
+
+      <!-- <ul class="nav__ul">
+        <li>
+          <a href="#">About Us</a>
+        </li>
+
+        <li>
+          <a href="#">Services</a>
+        </li>
+
+        <li>
+          <a href="#">Solutions</a>
+        </li>
+
+        <li>
+          <a href="#">Careers</a>
+        </li>
+      </ul>
+    </li> -->
+
+
+    <li class="nav__item">
+      <h2 class="nav__title">CSO Logs data Visualization</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="FAQ.html">FAQ</a>
+        </li>
+
+        <li>
+          <a href="PrivacyPolicy.html">Privacy Policy</a>
+        </li>
+
+        <li>
+          <a href="TermsOfUse.html">Terms of Use</a>
+        </li>
+
+      </ul>
+    </li>
+
+    <li class="nav__item">
+      <h2 class="nav__title">Contact Us</h2>
+
+      <ul class="nav__ul">
+        <li>
+          East Tower Philippine Stock Center Exchange 1605, Exchange Rd, Ortigas Center, Pasig
+        </li>
+
+        <li>
+          (+63) 9178009847
+        </li>
+
+        <li>
+          (+63) 9363392851
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="legal">
+      &copy; 2023 All rights reserved.
+
+  </div>
+</footer>
+
+</body>
+</html>
